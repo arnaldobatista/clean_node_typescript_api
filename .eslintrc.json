@@ -10,7 +10,13 @@
   },
   "rules": {
     "quotes": ["error", "single"],
-    "@typescript-eslint/strict-boolean-expressions": "warn",
-    "strictNullChecks": true
-  }
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "@typescript-eslint/space-before-function-paren": "off",
+    "@typescript-eslint/prefer-nullish-coalescing": "off"
+  },
+  "overrides": [
+    {
+      "files": ["*.js", "*.jsx", "*.ts", "*.tsx"]
+    }
+  ]
 }

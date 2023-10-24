@@ -29,14 +29,8 @@
   },
   "lint-staged": {
     "*.ts": [
-      "eslint 'src/**' --fix",
-      "npm run test:staged",
-      "git add"
+      "eslint --fix",
+      "npm run test:staged"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  }
+  }  
 }
